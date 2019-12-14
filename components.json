@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Transfer",
+    "type": "struct",
+    "components": [
+      {
+        "name": "from",
+        "type": "account"
+      },
+      {
+        "name": "to",
+        "type": "account"
+      },
+      {
+        "name": "amount",
+        "type": "uint64"
+      }
+    ]
+  },
+  {
+    "name": "TransferReceipts",
+    "type": "struct",
+    "components": [
+      {
+        "name": "trans",
+        "type": "Transfer[]",
+        "components": []
+      },
+      {
+        "name": "message",
+        "type": "string"
+      }
+    ]
+  }
+]
